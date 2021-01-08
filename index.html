@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.5/pixi.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pubsub-js/1.7.0/pubsub.min.js"></script>
+</head>
+<body>
+    <header class="header">
+		<div class="header__wrapper">
+			<div class="header__logo logo">Traveler</div>
+			<div class="header__right">
+				<button class="header__search"></button>
+				<button class="header__menu"></button>
+			</div>
+		</div>
+    </header>
+    <div class="sections">
+		<section class="section is-active">
+			<div class="section__title-list">
+				<h2 class="section__title" data-title="1"><span class="section__number">01</span>Tokyo</h2>
+                <h2 class="section__title" data-title="2"><span class="section__number">02</span>Mexico City</h2>
+                <h2 class="section__title" data-title="3"><span class="section__number">03</span>Nagoya</h2>
+			</div>
+		</section>
+    </div>
+    <footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__left">
+				<div class="footer__social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="" class="social__link">Twitter</a>
+						</li>
+						<li class="social__item">
+							<a href="" class="social__link">Facebook</a>
+						</li>
+						<li class="social__item">
+							<a href="" class="social__link">Instagram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__right">
+				<div class="footer__lang">
+					<ul class="lang__list">
+						<li class="lang__item">
+							<button class="lang__btn lang__btn--active ">En</button>
+						</li>
+						<li class="lang__item">
+							<button class="lang__btn">Jp</button>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__logo logo">Traveler</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="canvas"></div>
+
+	<script src="main.js"></script>
+</body>
+</html>
